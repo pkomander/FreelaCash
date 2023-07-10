@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net6.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FreelaCashApp
+build_property.ProjectDir = C:\Users\prara\OneDrive\Documentos\FreelaCashApp\FreelaCashApp\
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/Pages/EditarServicoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.Pages.EditarServicoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\EditarServicoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\EditarServicoPage.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/Pages/EditarUsuarioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.Pages.EditarUsuarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\EditarUsuarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\EditarUsuarioPage.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/Pages/ExibirServicoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.Pages.ExibirServicoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ExibirServicoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ExibirServicoPage.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/Pages/HomePrincipalPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.Pages.HomePrincipalPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\HomePrincipalPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\HomePrincipalPage.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/Pages/ListarFeedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.Pages.ListarFeedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ListarFeedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ListarFeedPage.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/Pages/LoginUsuarioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.Pages.LoginUsuarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\LoginUsuarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\LoginUsuarioPage.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/Pages/PerfilUsuarioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.Pages.PerfilUsuarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PerfilUsuarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PerfilUsuarioPage.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/prara/OneDrive/Documentos/FreelaCashApp/FreelaCashApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FreelaCashApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

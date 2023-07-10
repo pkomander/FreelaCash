@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Tarefa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    
+    <div id="formularioAdicionaTarefa">
+        <div class="centralizaTexto">
+            <h3>Adicionando nova Tarefa</h3>
+            <hr>
+        </div>
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="nomeCliente">Nome Cliente</label>
+                <input type="text" class="form-control" id="nomeCliente" placeholder="nome cliente" ng-model="name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="nomeEmpresa">Nome Empresa</label>
+                <input type="text" class="form-control" id="nomeEmpresa" placeholder="nome empresa">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputAddress">Data Solicitacao</label>
+                <input type="date" class="form-control" id="dataSolicitacao" placeholder="1234 Main St">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="qtdMinutosTarefa">Tempo de conclusao da tarefa</label>
+                <input type="number" class="form-control" id="qtdMinutosTarefa" placeholder="Informe em minutos">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="descricaoSolicitacao">Descricao Solicitacao</label>
+              <textarea type="text" class="form-control" id="descricaoSolicitacao" placeholder="Descreva o chamado"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tarefaConcluida">
+                <label class="form-check-label" for="gridCheck">
+                  Tarefa concluida
+                </label>
+              </div>
+            </div>
+
+            <div class="buttonCriar">
+              <button type="button" class="btn btn-secondary" href="#!tarefas">Voltar</button>
+              <button type="button" class="btn btn-primary">Criar Tarefa</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

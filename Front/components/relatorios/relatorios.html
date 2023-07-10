@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="input-group mb-3 divTabelaTarefas">
+        <!-- <div class="divButtonNovo">
+          <label for="">Adicionar novo:</label>
+          <a href="#!adicionarTarefas" class="btn btn-primary">Novo</a>
+        </div> -->
+        <table class="table table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Cliente</th>
+                <th scope="col">Empresa</th>
+                <th scope="col">Data Solicitacao</th>
+                <th scope="col">Desricao</th>
+                <th scope="col">Concluida</th>
+                <th scope="col">Quantidade Minutos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in retornoTarefas">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.nomeCliente}}</td>
+                <td>{{item.nomeEmpresa}}</td>
+                <td>{{formatarDataBr(item.dataSolicitacao)}}</td>
+                <!-- <td>{{item.dataEvento | date:'dd/MM/yyyy hh:mm'}}</td> -->
+                <td>{{formataDescricao(item.descricaoSolicitacao)}}</td>
+                <td>{{formataTarefaConcluida(item.tarefaConcluida)}}</td>
+                <td>{{item.qtdMinutosTarefa}} {{totalMinutos(item.qtdMinutosTarefa)}}</td>
+                
+              </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="6">Resultado</th>
+                    <th>Total minutos: {{minutosTrabalhados}}</th>
+                </tr>
+            </tfoot>
+        </table>
+      </div>
+</body>
+</html>

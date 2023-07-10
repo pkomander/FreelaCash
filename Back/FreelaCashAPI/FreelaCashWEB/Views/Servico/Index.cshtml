@@ -1,0 +1,123 @@
+﻿@model IEnumerable<FreelaCashWEB.Models.Servico>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" />
+<link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css" />
+<h1>Servicos</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">
+        <i class="fa fa-plus-circle"></i> Novo Servico
+    </a>
+</p>
+
+<div class="container">
+    <div class="tabela">
+        <table id="example" class="table table-striped table-bordered col-md-12" style="width:100%">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NomeCliente)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DataSolicitacao)
+                    </th>
+                    @*<th>
+                        @Html.DisplayNameFor(model => model.DescricaoSolicitacao)
+                    </th>*@
+                    <th>
+                        @Html.DisplayNameFor(model => model.QtdMinutosTarefa)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TarefaConcluida)
+                    </th>
+                    @*<th>
+                        @Html.DisplayNameFor(model => model.UserId)
+                    </th>*@
+                    <th>
+                        @Html.DisplayNameFor(model => model.EmpresaId)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NomeCliente)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DataSolicitacao)
+                        </td>
+                        @*<td>
+                            @Html.DisplayFor(modelItem => item.DescricaoSolicitacao)
+                        </td>*@
+                        <td>
+                            @Html.DisplayFor(modelItem => item.QtdMinutosTarefa)
+                        </td>
+                        @if(item.TarefaConcluida == true)
+                        {
+                            <td>
+                                @Html.DisplayName("Sim")
+                            </td>
+                        }
+                        else
+                        {
+                            <td>
+                                @Html.DisplayName("Nao")
+                            </td>
+                        }
+                        @*<td>
+                            @Html.DisplayFor(modelItem => item.TarefaConcluida)
+                        </td>*@
+                        @*<td>
+                            @Html.DisplayFor(modelItem => item.UserId)
+                        </td>*@
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Empresa.Nome)
+                        </td>
+                        <td colspan="3">
+                            @Html.ActionLink("", "Edit", new {  id=item.Id  }, new { @class = "btn btn-primary fa fa-id-card" })
+                            @Html.ActionLink("", "Details", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-default fa fa-newspaper-o" })
+                            @Html.ActionLink("", "Delete", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-danger fa fa-trash" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Id)</th>
+                    <th>@Html.DisplayNameFor(model => model.NomeCliente)</th>
+                    <th>@Html.DisplayNameFor(model => model.DataSolicitacao)</th>
+                    @*<th>@Html.DisplayNameFor(model => model.DescricaoSolicitacao)</th>*@
+                    <th>@Html.DisplayNameFor(model => model.QtdMinutosTarefa)</th>
+                    <th>@Html.DisplayNameFor(model => model.TarefaConcluida)</th>
+                    @*<th>@Html.DisplayNameFor(model => model.User)</th>*@
+                    <th>@Html.DisplayNameFor(model => model.Empresa)</th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#example').DataTable();
+</script>
+

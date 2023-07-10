@@ -1,0 +1,64 @@
+body{
+    background: #f0f0f0;
+}
+
+/* centralizando jumbotron e diminuindo tamanho */
+.jumbotronMarginTop {
+    padding: 20px;
+    margin-bottom: 0;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 24px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+#jumbotronMarginTop h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+#jumbotronMarginTop p {
+    font-size: 16px;
+}
+
+/* centralizando h1 */
+.centralizaTitulo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divButtonNovo{
+    margin-bottom: 5px;
+}
+
+/* tarefas */
+.divTabelaTarefas{
+    border: 3px solid #b8b2b2;
+    border-radius: 2px;
+    background: #fff;
+    padding: 20px;
+}
+
+
+/* Adiciona tarefas */
+#formularioAdicionaTarefa{
+    border: 3px solid #b8b2b2;
+    border-radius: 2px;
+    background: #fff;
+    padding: 20px;
+}
+
+.centralizaTexto{
+    text-align: center;
+}
+
+.buttonCriar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

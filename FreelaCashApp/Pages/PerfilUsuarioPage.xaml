@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FreelaCashApp.Pages.PerfilUsuarioPage"
+             Title="PerfilUsuarioPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="CenterAndExpand"
+                 Margin="16"
+                 Padding="16">
+
+            <Label 
+            Text="Perfil"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Border StrokeThickness="4"
+            StrokeShape="RoundRectangle 50,50,50,50"
+            Background="#2B0B98"
+            Padding="16,8"
+            HorizontalOptions="Center">
+                <Image x:Name="imgPerfil"
+                    Source="gojo.jpg"
+                    SemanticProperties.Description="net.maui surfing!"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    HorizontalOptions="Center" Aspect="AspectFit" />
+            </Border>
+            <Button Text="Alterar Imagem" Clicked="btnSelecionarImagem_Clicked" />
+
+
+
+            <Label x:Name="lblUserName"
+            Text="Nome de Usuario" />
+            <Entry 
+            Placeholder="Digite seu Nome de usuario"
+            x:Name="txtUserName"
+            Text="{Binding UserName}"/>
+
+            <Label x:Name="lblTitulo"
+            Text="Nome de Titulo" />
+            <Entry 
+            Placeholder="Digite seu Nome de Titulo"
+            x:Name="txtTitulo"
+            Text="{Binding Titulo}"/>
+
+            <Label x:Name="lblPrimeiroNome"
+            Text="Primeiro nome" />
+            <Entry 
+            Placeholder="Digite seu Primeiro nome"
+            x:Name="txtPrimeiroNome"
+            Text="{Binding PrimeiroNome}"/>
+
+            <Label x:Name="lblUltimoNome"
+            Text="Ultimo nome" />
+            <Entry 
+            Placeholder="Digite seu Ultimo nome"
+            x:Name="txtUltimoNome"
+            Text="{Binding UltimoNome}"/>
+
+
+            <Label x:Name="lblEmail"
+            Text="Email" />
+            <Entry 
+            Placeholder="Digite seu E-mail"
+            x:Name="txtEmail"
+            Text="{Binding Email}"/>
+
+
+            <Label x:Name="lblPhone"
+            Text="Telefone" />
+            <Entry 
+            Placeholder="Digite seu Telefone"
+            x:Name="txtPhone"
+            Text="{Binding Phone}"/>
+
+            <Label x:Name="lblFuncao"
+            Text="Funcao" />
+            <Entry 
+            Placeholder="Digite seu Funcao"
+            x:Name="txtFuncao"
+            Text="{Binding Funcao}"/>
+
+            <Label x:Name="lblDescricao"
+            Text="Descricao" />
+            <Entry 
+            Placeholder="Digite seu Descricao"
+            x:Name="txtDescricao"
+            Text="{Binding Descricao}"/>
+
+
+            <Label x:Name="lblSenha"
+            Text="Senha"/>
+            <Entry 
+            Placeholder="Digite sua senha"
+            x:Name="txtSenha"
+            Text="{Binding Password}"/>
+
+            <Button x:Name="btnAtualizar"
+                Clicked="btnAtualizar_clicked"
+                Text="Atualizar" Margin="10" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="content" class="flex">
+        <div class="">
+          
+           <div class="page-content page-container" id="page-content">
+              <div class="padding">
+                 <div class="row">
+                    <div class="col-md-6">
+                       <div class="card">
+                            <div class="card-header">
+                                <center><strong>Login FreelaCash</strong></center>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label class="text-muted" for="exampleInputEmail1"><strong>Usuario</strong></label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> 
+                                        <small id="emailHelp" class="form-text text-muted"><strong>Nao compartilhe seu E-mail com ninguem</strong></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-muted" for="exampleInputPassword1"><strong>Senha</strong></label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha"> 
+                                        <small id="passwordHelp" class="form-text text-muted"><strong>Nao compartilhe sua Senha com Ninguem</strong></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check"><input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label">Lembra-me login</label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </form>
+                            </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+<style>
+    body {
+        background-color: #181829;
+        animation: changeBackgroundColor 7s infinite;
+        /* background: #FFFFFF url("../../img/trabalho-de-freelancer.jpeg") no-repeat;
+        background-size: cover;
+        background-position: right top;
+        background-attachment: fixed; */
+    }
+
+    .row{
+        justify-content: center;
+    }
+
+    .flex {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto
+    }
+
+    @media (max-width:991.98px) {
+        .padding {
+            padding: 1.5rem
+        }
+    }
+
+    @media (max-width:767.98px) {
+        .padding {
+            padding: 1rem
+        }
+    }
+
+    .padding {
+        padding: 5rem
+    }
+
+    .card {
+        /* background: #fff; */
+        background-color: rgba(255, 250, 250, 0.781);
+        border-width: 0;
+        border-radius: .25rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+        margin-bottom: 1.5rem
+    }
+
+
+    .card-header {
+        background-color: transparent;
+        border-color: rgba(160, 175, 185, .15);
+        background-clip: padding-box
+    }
+
+    .card-body p:last-child {
+        margin-bottom: 0
+    }
+
+    .card-hide-body .card-body {
+        display: none
+    }
+
+    .form-check-input.is-invalid~.form-check-label,
+    .was-validated .form-check-input:invalid~.form-check-label {
+        color: #f54394
+    }
+    @keyframes changeBackgroundColor {
+        0% {
+            background-color: #181829;
+        }
+        50% {
+            background-color: #636060;
+        }
+        100% {
+            background-color: #001F3F;
+        }
+    }
+
+</style>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

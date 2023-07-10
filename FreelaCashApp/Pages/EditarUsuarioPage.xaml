@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FreelaCashApp.Pages.EditarUsuarioPage"
+             Title="EditarUsuarioPage"
+             NavigationPage.HasNavigationBar="False">
+    
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 Margin="16"
+                 Padding="16">
+        <Label 
+            Text="Registrar"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label x:Name="lblUserName"
+            Text="Nome de Usuario" />
+        <Entry 
+            Placeholder="Digite seu Nome de usuario"
+            x:Name="txtUserName"
+            Text="{Binding UserName}"/>
+
+        <Label x:Name="lblEmail"
+            Text="Email" />
+        <Entry 
+            Placeholder="Digite seu E-mail"
+            x:Name="txtEmail"
+            Text="{Binding Email}"/>
+
+        <Label x:Name="lblPrimeiroNome"
+            Text="Primeiro nome" />
+        <Entry 
+            Placeholder="Digite seu Primeiro nome"
+            x:Name="txtPrimeiroNome"
+            Text="{Binding PrimeiroNome}"/>
+
+        <Label x:Name="lblUltimoNome"
+            Text="Ultimo nome" />
+        <Entry 
+            Placeholder="Digite seu Ultimo nome"
+            x:Name="txtUltimoNome"
+            Text="{Binding UltimoNome}"/>
+
+        <Label x:Name="lblSenha"
+            Text="Senha"/>
+        <Entry 
+            Placeholder="Digite sua senha"
+            x:Name="txtSenha"
+            Text="{Binding Password}"/>
+
+        <Button x:Name="btnCadastrar"
+                Clicked="btnCadastrar_clicked"
+                Text="Cadastrar" Margin="10" />
+
+        <Button x:Name="btnVoltar"
+                Clicked="btnVoltar_clicked"
+                Text="Voltar" Margin="10" />
+    </StackLayout>
+</ContentPage>
